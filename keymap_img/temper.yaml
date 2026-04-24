@@ -1,44 +1,8 @@
+layout: {zmk_keyboard: temper}
 layers:
-  default:
-  - - Q
-    - W
-    - F
-    - P
-    - B
-    - J
-    - L
-    - U
-    - Y
-    - {t: '''', s: '"'}
-  - [A, R, S, T, G, M, N, E, I, O]
-  - - Z
-    - X
-    - C
-    - D
-    - V
-    - K
-    - H
-    - {t: ',', s: <}
-    - {t: ., s: '>'}
-    - /
-  - - ⌘
-    - num
-    - {t: ⇧, s: ⇪}
-    - SPACE
-    - nav
-    - {t: BACKSPACE, s: Alt+ BACKSPACE}
-  qwerty:
-  - [Q, W, E, R, T, Y, U, I, O, P]
-  - - A
-    - S
-    - D
-    - F
-    - G
-    - H
-    - J
-    - K
-    - L
-    - {t: ;, s: ':'}
+  ___@@@___:
+  - [Q, W, E, R, T, Y, U, I, O, PLAY PAUSE]
+  - [A, S, D, F, G, H, J, K, L, P]
   - - Z
     - X
     - C
@@ -48,112 +12,133 @@ layers:
     - M
     - {t: ',', s: <}
     - {t: ., s: '>'}
-    - /
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  num:
-  - - '~'
-    - '@'
-    - '{'
-    - '}'
-    - '%'
-    - '*'
-    - '7'
-    - '8'
-    - '9'
-    - {t: '-', s: _}
-  - [^, '#', (, ), $, _, '4', '5', '6', +]
-  - - {t: '&', s: '|'}
-    - <
-    - {t: '[', s: '{'}
-    - {t: ']', s: '}'}
-    - '>'
-    - {t: /, s: \}
-    - '1'
-    - '2'
-    - '3'
-    - {t: '=', s: +}
-  - - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-    - '0'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  nav:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - HOME
-    - END
-    - ↹
-    - {t: BACKSPACE, s: Alt+ BACKSPACE}
-  - - {t: ⇧, h: sticky}
+    - Ctl+Z
+  - - {t: _____>>>, h: toggle}
     - {t: ⌃, h: sticky}
-    - {t: ⎇, h: sticky}
-    - {t: ⌘, h: sticky}
-    - ↹
-    - ←
-    - ↓
-    - ↑
-    - →
-    - {t: ESC, s: '`'}
+    - {t: LSHIFT, h: sticky}
+    - {t: '   <>   ', h: sticky}
+    - {t: _____>>>, h: toggle}
+    - {t: ___@@@___, h: toggle}
+  _____>>>:
   - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&msc SCRL_UP'
+    - '&msc SCRL_LEFT'
+    - '&msc SCRL_RIGHT'
+    - {t: ▽, type: trans}
+  - - ESC
+    - '&mkp RCLK'
+    - '&mkp MCLK'
+    - '&mkp LCLK'
     - DEL
     - {t: ▽, type: trans}
+    - '&mmv MOVE_LEFT'
+    - '&mmv MOVE_UP'
+    - '&mmv MOVE_RIGHT'
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - Ctl+X
+    - Ctl+C
+    - Ctl+V
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - RET
-    - {t: ▽, type: trans}
+    - '&msc SCRL_DOWN'
+    - '&mmv MOVE_DOWN'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {type: held}
     - {t: ▽, type: trans}
-  fun:
-  - - {t: qwerty, h: toggle}
-    - MUTE
-    - VOL DN
-    - VOL UP
-    - OUT TOG
     - {t: ▽, type: trans}
+  <<<_____:
+  - - {t: ▽, type: trans}
+    - KP 7
+    - KP 8
+    - KP 9
+    - {t: /, h: '*', s: '?'}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - KP 4
+    - KP 5
+    - KP 6
+    - {t: '-', h: +, s: _}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - KP 1
+    - KP 2
+    - KP 3
+    - {t: ENTER, h: '='}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ',', s: <}
+    - KP 0
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  '   <>   ':
+  - - {t: '&', h: '#'}
+    - PLAY
+    - {t: $, h: \}
+    - {t: ']', h: '[', s: '}'}
+    - {t: '}', h: '{'}
+    - {t: ;, s: ':'}
+    - ':'
+    - '!'
+    - '?'
+    - '&Passpc'
+  - [F1, F2, F3, F4, F5, '"', (, ), _, '&Passfirma']
+  - - F6
     - F7
     - F8
     - F9
-    - F12
-  - - {t: BT, h: '0'}
-    - {t: BT, h: '1'}
-    - {t: BT, h: '2'}
-    - {t: BT, h: '3'}
-    - {t: BT, h: '4'}
-    - {t: ▽, type: trans}
-    - F4
-    - F5
-    - F6
-    - F11
-  - - BT CLR
-    - PREV
-    - PP
-    - NEXT
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - F1
-    - F2
-    - F3
     - F10
+    - {t: /, s: '?'}
+    - '@'
+    - HOME
+    - '%'
+    - PRINTSCREEN
   - - {t: ▽, type: trans}
-    - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+combos:
+- p: [16, 17]
+  k: BSPC
+- p: [12, 13]
+  k: SPACE
+- p: [26, 27]
+  k: ENTER
+- p: [22, 23]
+  k: DEL
+- p: [13, 14]
+  k: ↹
+- p: [15, 16]
+  k: {t: '''', s: '"'}
+- p: [1, 11]
+  k: {t: <<<_____, h: toggle}
+- p: [23, 24]
+  k: ESC
+- p: [25, 26]
+  k: {t: '''', s: '"'}
+- p: [18, 8]
+  k: ⇪
