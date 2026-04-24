@@ -26,7 +26,7 @@ include:
 
   # Dongle Prospector
   - board: seeeduino_xiao_ble
-    shield: temper_prospector_adapter
+    shield: prospector_adapter
 
   - board: seeeduino_xiao_ble
     shield: settings_reset
