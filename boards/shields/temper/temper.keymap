@@ -19,7 +19,7 @@
 
 #include <dt-bindings/zmk/pointing.h>
 
-&num_word { continue-list = <LPAR RPAR IT_EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA DOT>; };
+&num_word { continue-list = <LPAR RPAR EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA DOT>; };
 
 &caps_word { continue-list = <SPACE>; };
 
