@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: carrefinho                            # <--- add this
       url-base: https://github.com/carrefinho     # <--- and this
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -12,6 +14,12 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: main
+    - name: zmk-auto-layer
+      remote: urob
+      revision: v0.3 # set to same version as zmk above 
+    - name: zmk-leader-key
+      remote: urob
+      revision: v0.3 # Should match ZMK release.
 
   self:
     path: config
