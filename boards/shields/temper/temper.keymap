@@ -79,14 +79,6 @@
             bindings = <&num_word 2>, <&kp W>;
         };
 
-        mau_word: mau_word {
-            compatible = "zmk,behavior-auto-layer";
-            #binding-cells = <1>;
-            continue-list = <MB2 MB3 MB1 MOVE_LEFT MOVE_UP MOVE_RIGHT MOVE_DOWN SCRL_UP SCRL_DOWN SCRL_RIGHT SCRL_LEFT>;
-            ignore-modifiers;
-            label = "MAU_WORD";
-        };
-
         frecce_dx_su: frecce_dx_su {
             compatible = "zmk,behavior-hold-tap";
             label = "FRECCE_DX_SU";
@@ -110,6 +102,18 @@
         };
     };
 };
+
+/ {
+  behaviors {
+    mau_word: mau_word {
+      compatible = "zmk,behavior-auto-layer";
+      #binding-cells = <1>;
+      continue-list = <MB2 MB3 MB1 MOVE_LEFT MOVE_UP MOVE_RIGHT MOVE_DOWN SCRL_UP SCRL_DOWN SCRL_RIGHT SCRL_LEFT>;
+      ignore-modifiers;
+    };
+  };
+};
+
 
 / {
     combos {
