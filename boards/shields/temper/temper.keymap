@@ -117,7 +117,6 @@
   };
 };
 
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -173,6 +172,11 @@
             bindings = <&msc SCRL_RIGHT>;
             key-positions = <6 16>;
             layers = <4>;
+        };
+
+        mau {
+            bindings = <&mau_word 4>;
+            key-positions = <6 16>;
         };
 
         scroll_sx {
