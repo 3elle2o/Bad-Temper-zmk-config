@@ -199,7 +199,6 @@
         &mt LC(Z) Z  &kp B  &kp C  &kp V  &kp X        &base_k  &kp M  &kp COMMA  &kp DOT  &mau_word 4
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                        &frecce_sx_giu DOWN_ARROW LEFT_ARROW  &sk LCTRL  &sk LSHIFT  &sl 3  &nav_word 1  &frecce_dx_su UP_ARROW RIGHT_ARROW
-            >;
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
