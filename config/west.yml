@@ -12,9 +12,6 @@ manifest:
     - name: zmk-auto-layer
       remote: urob
       revision: v0.3 # set to same version as zmk above 
-    - name: zmk-leader-key
-      remote: urob
-      revision: v0.3 # Should match ZMK release.
-
+      
   self:
     path: config
