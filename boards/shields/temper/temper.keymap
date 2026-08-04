@@ -17,7 +17,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 &num_word { continue-list = <LPAR RPAR EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA DOT>; };
-
 &caps_word { continue-list = <SPACE BSPC>; };
 
 &mt {
@@ -47,23 +46,19 @@
         ignore-modifiers;
     };
 
+    mau_word: mau_word {
+        compatible = "zmk,behavior-auto-layer";
+        #binding-cells = <1>;
+        continue-list = <LCLK RCLK MCLK MOVE_X MOVE_Y SCROLL_X SCROLL_Y>;
+        ignore-modifiers;
+    };
+
     behaviors {
-        mod_tap: mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            bindings = <&mo>, <&sl>;
-
-            display-name = "Mod-Tap";
-            flavor = "tap-preferred";
-        };
-
         modificatori: modificatori {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             bindings = <&sk>, <&kp>;
-
             display-name = "modificatori";
             flavor = "tap-preferred";
         };
@@ -73,17 +68,6 @@
             #binding-cells = <2>;
             display-name = "SCHIFTNUM";
             bindings = <&mo>, <&sk>;
-
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-        };
-
-        simb_nav: simb_nav {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SIMB_NAV";
-            bindings = <&sl>, <&mo>;
-
-            #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
@@ -93,7 +77,6 @@
             label = "SIMB_FRECCE";
             #binding-cells = <0>;
             bindings = <&sl 3>, <&nav_word 1>;
-
             tapping-term-ms = <250>;
         };
     };
@@ -145,7 +128,7 @@
 &kp Q                  &kp W  &kp E  &kp R           &kp T                                               &kp Y        &kp U  &kp I      &kp O       &caps_word
 &kp A                  &kp S  &kp D  &kp F           &kp G                                               &kp H        &kp J  &kp K      &kp L       &kp P  
 &modificatori LCTRL Z  &kp X  &kp C  &kp V           &kp B                                               &kp N        &kp M  &kp COMMA  &kp DOT     &kp ESC  
-                                     &mo 4           &kp DEL  &schiftnum 2 LEFT_SHIFT      &simb_frecce  &kp TAB      &mo 5  
+                                     &mau_word 4     &kp DEL  &schiftnum 2 LEFT_SHIFT      &simb_frecce  &kp TAB      &mo 5  
             >;
         };
 
@@ -189,7 +172,7 @@
             >;
         };
 
-        media {
+        MEDIA {
             display-name = "MEDIA";
             bindings = <
 &kp C_VOL_UP      &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  
