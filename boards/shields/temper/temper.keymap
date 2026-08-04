@@ -146,9 +146,9 @@
             display-name = "NUMERI";
             bindings = <
 &kp ASTRK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH                       &trans  &trans  &trans  &trans  &trans  
-&kp PLUS   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS                       &trans  &trans  &trans  &trans  &trans  
-&kp EQUAL  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp COMMA                       &trans  &trans  &trans  &trans  &trans  
-                                 &kp DOT    &kp N0      &trans      &trans  &trans  &trans
+&kp COMMA   &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS                       &trans  &trans  &trans  &trans  &trans  
+&kp N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp PLUS                       &trans  &trans  &trans  &trans  &trans  
+                                 &kp DOT    &kp EQUAL      &trans      &trans  &trans  &trans
             >;
         };
 
@@ -165,10 +165,10 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&trans          &trans     &trans     &trans        &trans                                       &trans  &trans  &trans  &trans  &trans 
-&trans          &mkp RCLK  &mkp MCLK  &mkp LCLK     &trans                                       &trans  &trans  &trans  &trans  &trans  
-&trans          &trans     &trans     &trans        &trans                                       &trans  &trans  &trans  &trans  &trans  
-                                      &trans        &trans         &trans                &trans  &trans  &trans
+&trans          &trans     &trans     &trans        &trans                                          &trans      &trans     &trans  &trans  &trans 
+&trans          &mkp RCLK  &mkp MCLK  &mkp LCLK     &caps_word                                      &trans      &trans     &trans  &trans  &trans  
+&trans          &trans     &trans     &trans        &trans                                          &caps_word  &trans     &trans  &trans  &trans  
+                                      &trans        &trans         &trans                &mkp LCLK  &mkp MCLK   &mkp RCLK
             >;
         };
 
