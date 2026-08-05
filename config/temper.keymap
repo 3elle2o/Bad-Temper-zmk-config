@@ -128,9 +128,9 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&kp Q                  &kp W  &kp E  &kp R    &kp T                    &kp Y         &kp U    &kp I      &kp O    &caps_word
-&kp A                  &kp S  &kp D  &kp F    &kp G                    &kp H         &kp J    &kp K      &kp L    &kp P
-&modificatori LCTRL Z  &kp X  &kp C  &kp V    &kp B                    &kp N         &kp M    &kp COMMA  &kp DOT  &kp ESC
+&kp Q                  &kp W  &kp E  &kp R    &kp T                    &kp Y         &kp U    &kp I        &kp O    &caps_word
+&kp A                  &kp S  &kp D  &kp F    &kp G                    &kp H         &kp J    &kp K        &kp L    &kp P
+&modificatori LCTRL Z  &kp X  &kp C  &kp V    &kp B                    &kp N         &kp M    &kp COMMA    &kp DOT  &kp ESC
                               &mo 5  &kp DEL  &schiftnum 2 LEFT_SHIFT  &simb_frecce  &kp TAB  &mau_word 4
             >;
         };
@@ -168,10 +168,10 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans     &trans     &trans     &trans          &trans     &trans     &trans     &trans  &trans
-&trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans          &trans     &trans     &trans     &trans  &trans
-&trans  &trans     &trans     &trans     &trans          &trans     &trans     &trans     &trans  &trans
-                   &trans     &kp RCTRL  &kp LEFT_SHIFT  &mkp LCLK  &mkp MCLK  &mkp RCLK
+&trans  &trans     &trans     &trans     &trans          &trans     &trans     &trans  &trans  &trans
+&trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans          &trans     &trans     &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans          &trans     &trans     &trans  &trans  &trans
+                   &trans     &kp RCTRL  &kp LEFT_SHIFT  &mkp LCLK  &mkp RCLK  &trans
             >;
         };
 
