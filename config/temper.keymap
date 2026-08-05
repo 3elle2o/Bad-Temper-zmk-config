@@ -148,20 +148,20 @@
         NUMBER {
             display-name = "NUMERI";
             bindings = <
-&kp ASTRK  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp SLASH  &trans  &trans  &trans  &trans  &trans
-&kp COMMA  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS  &trans  &trans  &trans  &trans  &trans
-&kp N0     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp PLUS   &trans  &trans  &trans  &trans  &trans
-                      &kp DOT    &kp EQUAL  &trans     &trans  &trans  &trans
+&kp EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp DOT     &trans  &trans  &trans  &trans  &trans
+&kp MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp DOT     &trans  &trans  &trans  &trans  &trans
+&kp PLUS   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LC(N0)  &trans  &trans  &trans  &trans  &trans
+                      &kp ASTRK  &kp SLASH  &trans      &trans  &trans  &trans
             >;
         };
 
         SIMBOLI {
             display-name = "SIMBOLI";
             bindings = <
-&kp DOLLAR  &kp LESS_THAN     &kp LEFT_BRACE   &kp LBKT           &kp SLASH  &kp EXCL  &kp COLON  &kp SEMI  &kp QUESTION  &passpc
-&kp HASH    &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AMPS   &kp DQT   &kp LPAR   &kp RPAR  &kp UNDER     &passfirma
-&kp CARET   &kp PIPE          &kp BSLH         &kp PERCENT        &kp F2     &none     &kp AT     &kp HOME  &none         &kp PRINTSCREEN
-                              &trans           &trans             &trans     &trans    &trans     &trans
+&none      &kp LESS_THAN     &kp LEFT_BRACE   &kp LBKT           &kp DOLLAR  &kp EXCL   &kp COLON  &kp SEMI  &kp QUESTION  &passpc
+&none      &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AMPS    &kp DQT    &kp LPAR   &kp RPAR  &kp UNDER     &passfirma
+&kp CARET  &kp PIPE          &kp BSLH         &kp HASH           &kp F2      &kp SLASH  &kp AT     &kp HOME  &kp PERCENT   &kp PRINTSCREEN
+                             &trans           &trans             &trans      &trans     &trans     &trans
             >;
         };
 
