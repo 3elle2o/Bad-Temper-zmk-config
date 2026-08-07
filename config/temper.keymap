@@ -112,13 +112,18 @@
 
         numeri {
             bindings = <&num_word 2>;
-            key-positions = <17 27>;
+            key-positions = <25 15>;
         };
 
         entersx {
             bindings = <&kp ENTER>;
             key-positions = <27 26>;
             timeout-ms = <50>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <14 24>;
         };
     };
 
@@ -128,10 +133,10 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&kp Q                  &kp W  &kp E    &kp R    &kp T                                    &kp Y       &kp U       &kp I      &kp O    &mo 5
-&kp A                  &kp S  &kp D    &kp F    &kp G                                    &kp H       &kp J       &kp K      &kp L    &kp P
-&modificatori LCTRL Z  &kp X  &kp C    &kp V    &kp B                                    &kp N       &kp M       &kp COMMA  &kp DOT  &kp ESC
-                              &kp TAB  &kp DEL  &schiftnum 2 LEFT_SHIFT    &simb_frecce  &caps_word  &mau_word 4
+&kp Q  &kp W  &kp E    &kp R      &kp T                    &kp Y         &kp U       &kp I        &kp O    &kp TAB
+&kp A  &kp S  &kp D    &kp F      &kp G                    &kp H         &kp J       &kp K        &kp L    &kp P
+&kp Z  &kp X  &kp C    &kp V      &kp B                    &kp N         &kp M       &kp COMMA    &kp DOT  &kp ESC
+              &kp DEL  &sk RCTRL  &schiftnum 2 LEFT_SHIFT  &simb_frecce  &caps_word  &mau_word 4
             >;
         };
 
@@ -148,10 +153,10 @@
         NUMBER {
             display-name = "NUMERI";
             bindings = <
-&kp EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp DOT     &trans  &trans  &trans  &trans  &trans
-&kp MINUS  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp DOT     &trans  &trans  &trans  &trans  &trans
-&kp PLUS   &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp LC(N0)  &trans  &trans  &trans  &trans  &trans
-                      &kp ASTRK  &kp SLASH  &trans      &trans  &trans  &trans
+&trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp DOT    &trans     &trans     &trans     &trans     &trans
+&trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COMMA  &kp EQUAL  &kp SLASH  &kp ASTRK  &kp MINUS  &kp PLUS
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans     &trans     &trans     &trans     &trans
+                      &trans        &trans        &trans     &trans     &trans     &trans
             >;
         };
 
@@ -172,16 +177,6 @@
 &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans          &trans     &trans     &trans  &trans  &trans
 &trans  &trans     &trans     &trans     &trans          &trans     &trans     &trans  &trans  &trans
                    &trans     &kp RCTRL  &kp LEFT_SHIFT  &mkp LCLK  &mkp RCLK  &trans
-            >;
-        };
-
-        MEDIA {
-            display-name = "MEDIA";
-            bindings = <
-&kp C_VOL_UP      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp C_PLAY_PAUSE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp K_VOL_DN      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
