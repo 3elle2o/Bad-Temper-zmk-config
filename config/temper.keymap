@@ -173,10 +173,10 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans     &trans     &trans     &trans          &trans  &trans  &trans  &trans     &trans
-&trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans          &trans  &trans  &trans  &trans     &trans
-&trans  &trans     &trans     &trans     &trans          &trans  &trans  &trans  &mkp RCLK  &mkp LCLK
-                   &trans     &kp RCTRL  &kp LEFT_SHIFT  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans          &trans  &trans  &trans   &trans     &trans
+&trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans          &trans  &trans  &trans   &trans     &trans
+&trans  &trans     &trans     &trans     &trans          &trans  &trans  &trans   &mkp RCLK  &mkp LCLK
+                   &kp DEL    &kp RCTRL  &kp LEFT_SHIFT  &trans  &trans  &kp TAB
             >;
         };
     };
