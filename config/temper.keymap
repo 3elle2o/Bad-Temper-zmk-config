@@ -87,35 +87,35 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_backspace {
+        bks {
             timeout-ms = <50>;
             key-positions = <16 17>;
             bindings = <&kp BSPC>;
         };
 
-        combo_space {
+        spc {
             timeout-ms = <60>;
             key-positions = <12 13>;
             bindings = <&kp SPACE>;
         };
 
-        combo_enter {
+        ent {
             timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&kp ENTER>;
         };
 
-        apostrofo {
+        apo {
             bindings = <&kp APOS>;
             key-positions = <16 17 18>;
         };
 
-        numeri {
+        num {
             bindings = <&num_word 2>;
             key-positions = <25 15>;
         };
 
-        entersx {
+        ent {
             bindings = <&kp ENTER>;
             key-positions = <27 26>;
             timeout-ms = <50>;
