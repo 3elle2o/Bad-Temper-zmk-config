@@ -82,6 +82,15 @@
 
             tapping-term-ms = <250>;
         };
+
+        mai_mau: mai_mau {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MAI_MAU";
+            #binding-cells = <0>;
+            bindings = <&caps_word>, <&mau_word>;
+
+            tapping-term-ms = <250>;
+        };
     };
 
     combos {
@@ -125,6 +134,16 @@
             bindings = <&kp TAB>;
             key-positions = <14 24>;
         };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <16 26>;
+        };
+
+        mau {
+            bindings = <&mau_word>;
+            key-positions = <17 27>;
+        };
     };
 
     keymap {
@@ -133,9 +152,9 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&kp Q  &kp W  &kp E    &kp R      &kp T                    &kp Y         &kp U       &kp I      &kp O    &mau_word 4
+&kp Q  &kp W  &kp E    &kp R      &kp T                    &kp Y         &kp U       &kp I      &kp O    &sk RIGHT_ALT
 &kp A  &kp S  &kp D    &kp F      &kp G                    &kp H         &kp J       &kp K      &kp L    &kp P
-&kp Z  &kp X  &kp C    &kp V      &kp B                    &kp N         &kp M       &kp COMMA  &kp DOT  &kp ESC
+&kp Z  &kp X  &kp C    &kp V      &kp B                    &kp N         &kp M       &kp COMMA  &kp DOT  &sk RIGHT_WIN
               &kp DEL  &sk RCTRL  &schiftnum 2 LEFT_SHIFT  &simb_frecce  &caps_word  &kp TAB
             >;
         };
