@@ -130,7 +130,7 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&kp Q  &kp W  &kp E    &kp R      &kp T                    &kp Y         &kp U       &kp I      &kp O    &to 4
+&kp Q  &kp W  &kp E    &kp R      &kp T                    &kp Y         &kp U       &kp I      &kp O    &tog 4
 &kp A  &kp S  &kp D    &kp F      &kp G                    &kp H         &kp J       &kp K      &kp L    &kp P
 &kp Z  &kp X  &kp C    &kp V      &kp B                    &kp N         &kp M       &kp COMMA  &kp DOT  &kp ESC
               &kp DEL  &sk RCTRL  &schiftnum 2 LEFT_SHIFT  &simb_frecce  &caps_word  &kp TAB
