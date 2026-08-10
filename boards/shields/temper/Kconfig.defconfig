@@ -1,5 +1,5 @@
 
-if SHIELD_TEMPER_DONGLE
+if SHIELD_TEMPER_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "temper"
