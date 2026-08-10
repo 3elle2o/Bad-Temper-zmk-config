@@ -115,7 +115,7 @@
             key-positions = <25 15>;
         };
 
-        ent {
+        ent2 {
             bindings = <&kp ENTER>;
             key-positions = <27 26>;
             timeout-ms = <50>;
