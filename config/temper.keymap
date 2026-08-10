@@ -143,10 +143,10 @@
         FRECCE {
             display-name = "OPZIONI";
             bindings = <
-&trans        &trans        &trans            &trans          &trans  &trans  &trans          &kp UP     &trans  &trans
-&kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans  &kp LEFT_ARROW  &kp RIGHT  &trans  &trans
-&trans        &trans        &trans            &trans          &trans  &trans  &trans          &kp DOWN   &trans  &trans
-                            &trans            &trans          &trans  &trans  &trans          &trans
+&trans        &trans        &trans            &trans          &trans  &trans   &trans          &kp UP     &trans  &trans
+&kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &kp TAB  &kp LEFT_ARROW  &kp RIGHT  &trans  &trans
+&trans        &trans        &trans            &trans          &trans  &trans   &trans          &kp DOWN   &trans  &trans
+                            &trans            &trans          &trans  &trans   &trans          &trans
             >;
         };
 
@@ -173,10 +173,10 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans     &trans     &trans     &trans          &trans  &trans  &trans   &trans     &trans
-&trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans          &trans  &trans  &trans   &trans     &trans
-&trans  &trans     &trans     &trans     &trans          &trans  &trans  &trans   &mkp RCLK  &mkp LCLK
-                   &kp DEL    &kp RCTRL  &kp LEFT_SHIFT  &trans  &trans  &kp TAB
+&trans  &trans     &trans     &trans     &trans          &trans  &trans          &mmv MOVE_UP     &trans  &trans
+&trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans          &trans  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans     &trans     &trans     &trans          &trans  &trans          &mmv MOVE_DOWN   &trans  &trans
+                   &kp DEL    &kp RCTRL  &kp LEFT_SHIFT  &trans  &trans          &kp TAB
             >;
         };
     };
