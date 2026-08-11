@@ -1,11 +1,23 @@
-if SHIELD_TEMPER_DONGLE
+if SHIELD_TEMPER_LEFT || SHIELD_TEMPER_RIGHT || SHIELD_TEMPER_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "temper"
 
+endif
+
+if SHIELD_TEMPER_LEFT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_TEMPER_DONGLE
+
 config ZMK_SPLIT
     default y
 
+# NOTA: Questa è la variabile fondamentale per il Dongle
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
 
