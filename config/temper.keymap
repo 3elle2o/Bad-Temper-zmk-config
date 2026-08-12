@@ -170,9 +170,9 @@
         MOUSE {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans     &trans     &trans     &trans          &trans  &trans          &mmv MOVE_UP     &trans  &trans
-&trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans          &trans  &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans     &trans     &trans     &trans          &trans  &trans          &mmv MOVE_DOWN   &trans  &trans
+&trans  &trans     &trans     &trans     &trans          &trans  &trans          &mmv MOVE_UP    &trans           &trans
+&trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans          &trans  &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &trans
+&trans  &trans     &trans     &trans     &trans          &trans  &trans          &mmv MOVE_DOWN  &trans           &trans
                    &kp DEL    &kp RCTRL  &kp LEFT_SHIFT  &trans  &trans          &kp TAB
             >;
         };
