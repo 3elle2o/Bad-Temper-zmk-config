@@ -96,9 +96,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MAU_TAB";
             #binding-cells = <0>;
-            bindings = <&kp TAB>, <&mau_tab>;
+            bindings = <&kp TAB>, <&mau_word 4>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
         };
     };
 
