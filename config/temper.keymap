@@ -138,16 +138,6 @@
             key-positions = <27 26>;
             timeout-ms = <50>;
         };
-
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <14 24>;
-        };
-
-        mouse {
-            bindings = <&tog 4>;
-            key-positions = <13 12 11>;
-        };
     };
 
     keymap {
@@ -159,7 +149,7 @@
 &kp Q  &kp UP    &kp E    &kp R      &kp T                    &caps_word    &kp U         &kp I         &kp O    &kp ESC
 &kp A  &kp S     &kp D    &kp F      &kp G                    &kp H         &kp LEFT      &kp RIGHT     &kp L    &kp P
 &kp Z  &kp DOWN  &kp C    &kp V      &kp B                    &kp N         &kp M         &kp COMMA     &kp DOT  &mau_tab
-                 &kp DEL  &sk RCTRL  &schiftnum 2 LEFT_SHIFT  &simb_frecce  &kp LEFT_ALT  &sk LEFT_GUI
+                 &kp DEL  &sk RCTRL  &schiftnum 2 LEFT_SHIFT  &simb_frecce  &sk LEFT_ALT  &sk LEFT_GUI
             >;
         };
 
