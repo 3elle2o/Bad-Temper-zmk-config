@@ -131,7 +131,7 @@
         };
 
         mause {
-            bindings = <&mau_word>;
+            bindings = <&mau_word 4>;
             key-positions = <11 12 13>;
         };
     };
