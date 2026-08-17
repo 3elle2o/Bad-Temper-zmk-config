@@ -46,6 +46,13 @@
         ignore-modifiers;
     };
 
+    mau_word: mau_word {
+        compatible = "zmk,behavior-auto-layer";
+        #binding-cells = <1>;
+        continue-list = <RCLK MCLK LCLK MOVE_LEFT MOVE_RIGHT MOVE_UP>;
+        ignore-modifiers;
+    };
+
     behaviors {
         modificatori: modificatori {
             compatible = "zmk,behavior-hold-tap";
@@ -140,10 +147,10 @@
         Base {
             display-name = "QWERTY";
             bindings = <
-&kp Q  &kp UP    &kp E    &kp R         &kp T                    &caps_word    &kp U      &kp I         &kp O    &kp ESC
-&kp A  &kp S     &kp D    &kp F         &kp G                    &kp H         &kp LEFT   &kp RIGHT     &kp L    &kp P
-&kp Z  &kp DOWN  &kp C    &kp V         &kp B                    &kp N         &kp M      &kp COMMA     &kp DOT  &lt 4 TAB
-                 &kp DEL  &kp LEFT_ALT  &schiftnum 2 LEFT_SHIFT  &simb_frecce  &sk RCTRL  &sk LEFT_GUI
+&kp Q  &kp UP    &kp E    &kp R         &kp T                                    &caps_word    &kp U      &kp I         &kp O    &kp ESC
+&kp A  &kp S     &kp D    &kp F         &kp G                                    &kp H         &kp LEFT   &kp RIGHT     &kp L    &kp P
+&kp Z  &kp DOWN  &kp C    &kp V         &kp B                                    &kp N         &kp M      &kp COMMA     &kp DOT  &lt 4 TAB
+                 &kp DEL  &sk RCTRL     &schiftnum 2 LEFT_SHIFT  &simb_frecce    &kp LEFT_ALT  &sk LEFT_GUI
             >;
         };
 
@@ -183,7 +190,7 @@
 &trans  &trans     &trans     &trans     &trans          &trans  &trans          &mmv MOVE_UP    &trans           &trans
 &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans          &trans  &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &trans
 &trans  &trans     &trans     &trans     &trans          &trans  &trans          &mmv MOVE_DOWN  &trans           &trans
-                   &kp DEL    &kp RCTRL  &kp LEFT_SHIFT  &trans  &trans          &kp TAB
+                   &trans    &trans  &trans  &trans  &trans          &trans
             >;
         };
     };
