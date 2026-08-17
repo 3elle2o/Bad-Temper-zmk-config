@@ -92,11 +92,11 @@
             tapping-term-ms = <250>;
         };
 
-        mau_word: mau_word {
+        mau_tab: mau_tab {
             compatible = "zmk,behavior-tap-dance";
-            label = "MAU_WORD";
+            label = "MAU_TAB";
             #binding-cells = <0>;
-            bindings = <&kp TAB>, <&mau_word>;
+            bindings = <&kp TAB>, <&mau_tab>;
 
             tapping-term-ms = <250>;
         };
