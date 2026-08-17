@@ -150,7 +150,7 @@
         };
 
         FRECCE {
-            display-name = "america";
+            display-name = "usa_t c p";
             bindings = <
 &trans  &kp W   &trans     &trans     &trans     &kp Y   &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans  &kp J   &kp K   &trans  &trans
