@@ -39,13 +39,6 @@
         };
     };
 
-    nav_word: nav_word {
-        compatible = "zmk,behavior-auto-layer";
-        #binding-cells = <1>;
-        continue-list = <UP LEFT_ALT LEFT_GUI LEFT_CONTROL LEFT_SHIFT LEFT RIGHT TAB DOWN>;
-        ignore-modifiers;
-    };
-
     mau_word: mau_word {
         compatible = "zmk,behavior-auto-layer";
         #binding-cells = <1>;
@@ -54,16 +47,6 @@
     };
 
     behaviors {
-        modificatori: modificatori {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            bindings = <&sk>, <&kp>;
-
-            display-name = "modificatori";
-            flavor = "tap-preferred";
-        };
-
         schiftnum: schiftnum {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -72,24 +55,6 @@
 
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
-        };
-
-        simb_frecce: simb_frecce {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SIMB_FRECCE";
-            #binding-cells = <0>;
-            bindings = <&sl 3>, <&nav_word 1>;
-
-            tapping-term-ms = <250>;
-        };
-
-        mai_mau: mai_mau {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MAI_MAU";
-            #binding-cells = <0>;
-            bindings = <&caps_word>, <&none>;
-
-            tapping-term-ms = <250>;
         };
 
         symb_usa: symb_usa {
