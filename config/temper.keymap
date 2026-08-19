@@ -164,13 +164,13 @@
             >;
         };
 
-        FRECCE {
-            display-name = "usa_t c p";
+        Usa_Media_cp {
+            display-name = "Usa_Media_tcp";
             bindings = <
-&trans  &kp W   &trans     &trans     &trans     &kp Y   &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans  &kp J   &kp K   &trans  &trans
-&trans  &kp X   &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans  &trans  &trans
-                &trans     &trans     &trans     &trans  &trans  &trans
+&trans  &kp W      &trans     &trans     &trans  &kp Y           &trans            &trans           &trans             &trans
+&trans  &kp LC(X)  &kp RC(C)  &kp RC(V)  &trans  &trans          &kp J             &kp K            &trans             &trans
+&trans  &kp X      &trans     &trans     &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_NEXT
+                   &trans     &trans     &trans  &trans          &trans            &trans
             >;
         };
 
