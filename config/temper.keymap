@@ -17,7 +17,7 @@
 
 &num_word { continue-list = <LPAR RPAR EQUAL SLASH MINUS ASTRK PLUS PRCNT COMMA DOT>; };
 
-&caps_word { continue-list = <SPACE BSPC>; };
+&caps_word { continue-list = <SPACE>; };
 
 &mt {
     tapping-term-ms = <150>;
